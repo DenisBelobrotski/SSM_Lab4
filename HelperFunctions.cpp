@@ -27,11 +27,10 @@ double* calcResultsDoubleIntegral(double lowerBoundX, double upperBoundX, double
 double* calcIntegralResiduals(double exactSolution, double *results, int num);
 
 
-
 void calcSolutions()
 {
     const double singleIntegralLowerBound = -1.5;
-    const double singleIntegralUpperBound = +1.5;
+    const double singleIntegralUpperBound = 1.5;
 
     const double doubleIntegralLowerBoundX = -1.0;
     const double doubleIntegralUpperBoundX = 1.0;

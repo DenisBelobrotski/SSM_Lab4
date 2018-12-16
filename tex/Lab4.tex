@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=0cm]
+{geometry}
+
+\begin{document}
+
+\textbf{Белоброцкий Денис 4 курс 5 группа}
+\\
+\begin{center}
+	{\Large Лабораторная работа №4}
+\end{center} 
+\begin{center}
+	{\large \textbf{Метод Монте-Карло}}
+\end{center} 
+\begin{center}
+	Вариант 2
+\end{center}
+
+	\section*{Постановка задачи}
+	\par Вычислить значение интеграла, использую метод Монте-Карло. Сравнить полученные результаты с точным значением или со значением полученным с помощью математических пакетов.
+	\section*{Теория}
+	\par \textbf{Метод Монте-Карло} 
+	\par Для вычисления значения интеграла $ I = \int\limits_{\Omega} f(\overline{x}) d\overline{x} $ с помощью метода Монте-Карло применяется следующий алгоритм. Генерируется $ n $ случайных величин равномерно распределённых в области интегрирования $ \Omega $ и находится приближённое значение интеграла по следующей формуле:
+	$$ I \approx Q_n \equiv \frac{V}{n} \sum\limits_{i=1}^n f(\overline{x}_i) $$
+	\par Где $ V $ объём области интегрирования $ \Omega $.
+	\par По закону больших чисел:
+	$$ \lim\limits_{n\to \infty} Q_n = I $$
+
+\end{document}
